@@ -21,7 +21,8 @@ import numpy as np
 #    sess.run(train)
 #    if step % 20 == 0:
 #        print(step, sess.run(W), sess.run(b))
-
+import os
+os.environ['CUDA_VISIBLE_DEVICES']='7'
 
 a = tf.Variable([1,1])
 b = tf.Variable([2,2])
